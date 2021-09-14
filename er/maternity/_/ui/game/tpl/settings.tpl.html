@@ -1,0 +1,70 @@
+<div class="container">
+	<div class="panel settings">
+		<header>
+			<h1><a href="#/" aria-label="Return to menu"><span class="icon-arrow-left"></span></a> Game Options</h1>
+		</header>
+		<div class="main">
+			<div class="content">
+				<div class="cf">
+					<h2>Display:</h2>
+					<div class="radio">
+						<div>
+							<input type="radio" name="display_mode" id="mode_window" 
+								ng-model="sg.fullscreen" 
+								ng-value="false" 
+								ng-change="toggleFullScreen()"> 
+							<label for="mode_window" tabindex="0" role="radio" ng-keydown="onFullscreenKeydown($event)">Window</label>
+						</div>
+						<div>
+							<input type="radio" name="display_mode" id="mode_fullscreen" 
+								ng-model="sg.fullscreen" 
+								ng-value="true" 
+								ng-change="toggleFullScreen()"> 
+							<label for="mode_fullscreen" tabindex="0" role="radio" ng-keydown="onFullscreenKeydown($event)">Fullscreen</label>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="cf">
+					<h2>Subtitles:</h2>
+					<div class="radio">
+						<div>
+							<input type="radio" name="subtitles" id="subtitles_off"
+								ng-model="sg.subtitles"
+								ng-value="false"
+								ng-change="saveState()"> 
+							<label for="subtitles_off" tabindex="0" role="radio" ng-keydown="onSubtitlesKeydown($event)">Off</label>
+						</div>
+						<div>
+							<input type="radio" name="subtitles" id="subtitles_en"
+								ng-model="sg.subtitles"
+								ng-value="true"
+								ng-change="saveState()"> 
+							<label for="subtitles_en" tabindex="0" role="radio" ng-keydown="onSubtitlesKeydown($event)">On</label>
+						</div>
+					</div>
+				</div>
+				<!--<br>
+				<div class="cf">
+					<h2>Video Quality:</h2>
+					<div class="radio">
+						<div>
+							<input type="radio" name="quality" id="quality_720p"
+								ng-model="sg.quality"
+								ng-value="'-720p'"
+								ng-change="saveState()"> 
+							<label for="quality_720p">High (720p)</label>
+						</div>
+						<div>
+							<input type="radio" name="quality" id="quality_360p"
+								ng-model="sg.quality"
+								ng-value="''"
+								ng-change="saveState()"> 
+							<label for="quality_360p">Low (360p)</label>
+						</div>
+					</div>
+				</div>-->
+			</div>
+		</div>
+	</div>
+</div>

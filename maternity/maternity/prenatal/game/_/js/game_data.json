@@ -1,0 +1,804 @@
+{
+	"decisionpoints": [
+		
+		{
+			"id": 0,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "",
+			"message": "Comment devez-vous procéder avec l’entretien ?",
+			"options": [
+				{
+					"label": "Vous lui demandez comment elle se sent",
+					"next": 5
+				},
+				{
+					"label": "Vous félicitez Maddie pour sa grossesse",
+					"next": 1
+				},
+				{
+					"label": "Vous lui demandez comment elle se sent",
+					"next": 2
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 1,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "Lorsque vous avez félicité Maddie pour sa grossesse, vous avez présumé que cela la rendait heureuse. Essayez de trouver une autre approche qui permettrait à Maddie d’exprimer d’elle-même comment elle se sent par rapport à sa grossesse. ",
+			"message": "Think about best communication practices. How should you proceed with the interview?",
+			"options": [
+				{
+					"label": "Vous lui demandez comment elle se sent",
+					"next": 5
+				},
+				{
+					"label": "Vous lui demandez comment elle se sent",
+					"next": 2
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 2,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "Des questions commençant avec «pourquoi» peuvent suggérer un reproche et faire en sorte que la patiente adopte une attitude défensive. Maddie a pris rendez-vous pour une raison précise : elle demande des soins prénataux.",
+			"message": "Think about best communication practices. How should you proceed with the interview?",
+			"options": [
+				{
+					"label": "Vous lui demandez comment elle se sent",
+					"next": 5
+				},
+				{
+					"label": "Vous félicitez Maddie pour sa grossesse",
+					"next": 1
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 5,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": true,
+			"feedback": "",
+			"message": "Quelles questions supplémentaires pourriez-vous poser pour mieux comprendre la situation ?",
+			"options": [
+				{
+					"label": "Vous lui posez des questions sur son mari",
+					"next": 8
+				},
+				{
+					"label": "Vous lui posez des questions sur les personnes dans sa vie",
+					"next": 10
+				},
+				{
+					"label": "Vous lui posez des questions sur son ou sa partenaire",
+					"next": 9
+				}
+				
+			],
+			"next": null
+		},
+		{
+			"id": 8,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "Cette question sur le mari de Maddie laisse entrevoir de l’hétérosexisme et suppose que toute grossesse arrive dans un contexte de mariage. Essayez de trouver une autre façon de poser des questions sur les gens présents dans la vie de Maddie.",
+			"message": "What question would not reinforce the assumption of heterosexism and expectation of marriage?",
+			"options": [
+				{
+					"label": "Vous lui posez des questions sur les personnes dans sa vie",
+					"next": 10
+				},
+				{
+					"label": "Vous lui posez des questions sur son ou sa partenaire",
+					"next": 9
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 9,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "Cette question est très limitative et assume l’existence d’un ou d’une partenaire, ou encore qu’il est nécessaire d’être en couple pour avoir un bébé. Essayez de trouver une autre façon de poser des questions sur les gens dans sa vie",
+			"message": "What question would increase the your understanding of the situation?",
+			"options": [
+				{
+					"label": "Vous lui posez des questions sur son mari",
+					"next": 8
+				},
+				{
+					"label": "Vous lui posez des questions sur les personnes dans sa vie",
+					"next": 10
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 10,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": true,
+			"feedback": "",
+			"message": "Quelle serait la date prévue d’accouchement selon la règle de Naegele ?",
+			"options": [
+				{
+					"label": "Vous lui posez des questions additionnelle",
+					"next": 13
+				},
+				{
+					"label": "Le 26 octobre",
+					"next": 11
+				},
+				{
+					"label": "Le 9 novembre",
+					"next": 12
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 11,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "La règle de Naegele consiste à ajouter 7 jours à la date du premier jour des dernières menstruations et à y soustraire 3 mois. Il y a donc eu erreur de calcul, et la date prévue d’accouchement n’est pas le 26 octobre. Quelles autres étapes doivent être observées lors du calcul avec la règle de Naegele pour assurer la précision du calcul de la date prévue d’accouchement de Maddie ? ",
+			"message": "Use Naegele's rule to calculate the expected date of birth.",
+			"options": [
+				{
+					"label": "Le 9 novembre",
+					"next": 12
+				},
+				{
+					"label": "Vous lui posez des questions additionnelle",
+					"next": 13
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 12,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "La règle de Naegele présume un cycle menstruel de 28 jours. Comment pouvez-vous assurer que la règle de Naegele est utilisée à bon escient dans le cas de Maddie ? ",
+			"message": "Use Naegele's rule to calculate the expected date of birth.",
+			"options": [
+				{
+					"label": "Le 26 octobre",
+					"next": 11
+				},
+				{
+					"label": "Vous lui posez des questions additionnelle",
+					"next": 13
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 13,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": true,
+			"feedback": "",
+			"message": "Comment réagissez-vous à la faible pression de Maddie ?",
+			"options": [
+				{
+					"label": "Vous confirmez que tout cela est normal",
+					"next": 17
+				},
+				{
+					"label": "Vous lui posez des questions sur l’étourdissement",
+					"next": 14
+				},
+				{
+					"label": "Vous exprimez une inquiétude",
+					"next": 15
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 14,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "",
+			"message": "Comment expliquez-vous les étourdissements de Maddie ?",
+			"options": [
+				{
+					"label": "Vous confirmez que tout cela est normal",
+					"next": 17
+				},
+				{
+					"label": " L’hypovolémie",
+					"next": 16
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 15,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "Réfléchissez aux changements physiologiques qui peuvent survenir lors d’une grossesse.",
+			"message": "Comment réagissez-vous à la faible pression de Maddie ? ",
+			"options": [
+				{
+					"label": "Vous confirmez que tout cela est normal",
+					"next": 17
+				},
+				{
+					"label": "Vous lui posez des questions sur l’étourdissement",
+					"next": 14
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 16,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "Il est approprié de s’informer sur les étourdissements si le changement de pression artérielle vous cause des inquiétudes. Mais, il faut également se rappeler que pendant la grossesse, les changements hormonaux ont une incidence sur le système circulatoire. Rappelez-vous les changements qui surviennent aux signes vitaux chez les femmes enceintes.",
+			"message": "Comment expliquez-vous les étourdissements de Maddie ?",
+			"options": [
+				{
+					"label": "Vous confirmez que tout cela est normal",
+					"next": 17
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 17,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": true,
+			"feedback": "",
+			"message": "Que répondez-vous lorsque Maddie vous demande si la mesure de la hauteur utérine est normale ?",
+			"options": [
+				{
+					"label": "En dessous de ce qui est prévu",
+					"next": 18
+				},
+				{
+					"label": "Plus élevée que prévu ",
+					"next": 19
+				},
+				{
+					"label": "Hauteur attendue",
+					"next": 20
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 18,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "Il peut y avoir des écarts dans les évaluations de la hauteur utérine. Dans le cas de Maddie, aucune autre donnée ne permet une comparaison. Il est donc impossible de déterminer si la hauteur utérine s’est accrue depuis les dernières semaines. Essayez de trouver une autre façon de répondre à la mesure de la hauteur utérine. ",
+			"message": "Que répondez-vous lorsque Maddie vous demande si la mesure de la hauteur utérine est normale ?",
+			"options": [
+				{
+					"label": "Plus élevée que prévu ",
+					"next": 19
+				},
+				{
+					"label": "Hauteur attendue",
+					"next": 20
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 19,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "À 20 semaines, la hauteur utérine ne dépasse généralement pas l’ombilic. Tenez compte de la hauteur utérine prévue à 20 semaines en lien avec les indices physiques, comme l’ombilic. ",
+			"message": "Que répondez-vous lorsque Maddie vous demande si la mesure de la hauteur utérine est normale ?",
+			"options": [
+				{
+					"label": "En dessous de ce qui est prévu",
+					"next": 18
+				},
+				{
+					"label": "Hauteur attendue",
+					"next": 20
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 20,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": true,
+			"feedback": "",
+			"message": "Comment réagissez-vous à la décoloration visible sur l’abdomen de Maddie ?",
+			"options": [
+				{
+					"label": "Variations anormales",
+					"next": 21
+				},
+				{
+					"label": "Le signe de Cullen",
+					"next": 22
+				},
+				{
+					"label": "Changements hormonaux",
+					"next": 23
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 21,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "Des changements cutanés ne sont pas considérés comme anormaux. En fait, à cause des changements physiologiques qui surviennent lors d’une grossesse, il peut se développer plusieurs changements cutanés.",
+			"message": "Comment réagissez-vous à la décoloration visible sur l’abdomen de Maddie ?",
+			"options": [
+				{
+					"label": "Le signe de Cullen",
+					"next": 22
+				},
+				{
+					"label": "Changements hormonaux",
+					"next": 23
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 22,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "Le signe de Cullen est un œdème superficiel accompagné d’une ecchymose autour de l’ombilic. Les changements cutanés observés ici n’indiquent pas le signe de Cullen.",
+			"message": "Comment réagissez-vous à la décoloration visible sur l’abdomen de Maddie ?",
+			"options": [
+				{
+					"label": "Variations anormales",
+					"next": 21
+				},
+				{
+					"label": "Changements hormonaux",
+					"next": 23
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 23,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": true,
+			"feedback": "",
+			"message": "Comment réagissez-vous à une fréquence cardiaque fœtale de 98 ?",
+			"options": [
+				{
+					"label": "Vous vérifiez à nouveau",
+					"next": 24
+				},
+				{
+					"label": "Vous demandez de l’aide",
+					"next": 25
+				},
+				{
+					"label": "Vous prenez le pouls de Maddie",
+					"next": 26
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 24,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "Il est justifié de vérifier la fréquence à nouveau si vous n’êtes pas certaine de vos résultats.",
+			"message": "Comment réagissez-vous à une fréquence cardiaque fœtale de 98 ?",
+			"options": [
+				{
+					"label": "Vous demandez de l’aide",
+					"next": 25
+				},
+				{
+					"label": "Vous prenez le pouls de Maddie",
+					"next": 26
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 25,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "Lorsqu’on prend un signe vital comme la fréquence cardiaque fœtale, il faut s’assurer d’avoir la bonne technique et confirmer que ce que l’on entend est bel et bien le rythme cardiaque du bébé. ",
+			"message": "Comment réagissez-vous à une fréquence cardiaque fœtale de 98 ?",
+			"options": [
+				{
+					"label": "Vous prenez le pouls de Maddie",
+					"next": 26
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 26,
+			"type": "video",
+			"data": "SG4_DP8_1",
+			"correct": true,
+			"feedback": "",
+			"message": "",
+			"options": [],
+			"next": 27	
+		},
+		{
+			"id": 27,
+			"type": "lo",
+			"data": "",
+			"correct": false,
+			"feedback": "",
+			"message": "Quelle est la fréquence cardiaque fœtale ?",
+			"options": [
+				{
+					"label": "130",
+					"next": 28
+				},
+				{
+					"label": "110",
+					"next": 29
+				},
+				{
+					"label": "160",
+					"next": 30
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 28,
+			"type": "lo",
+			"data": "",
+			"correct": false,
+			"feedback": "C’est inexact. Entrainez-vous à compter un rythme cardiaque rapide",
+			"message": "Quelle est la fréquence cardiaque fœtale ?",
+			"options": [
+				{
+					"label": "110",
+					"next": 29
+				},
+				{
+					"label": "160",
+					"next": 30
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 29,
+			"type": "lo",
+			"data": "",
+			"correct": false,
+			"feedback": "C’est inexact. Entrainez-vous à compter un rythme cardiaque rapide",
+			"message": "Quelle est la fréquence cardiaque fœtale ?",
+			"options": [
+				{
+					"label": "130",
+					"next": 28
+				},
+				{
+					"label": "160",
+					"next": 30
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 30,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": true,
+			"feedback": "",
+			"message": "Que suggérez-vous à Maddie pour les vitamines prénatalesc ? ",
+			"options": [
+				{
+					"label": "Les prendre avec un repas.",
+					"next": 31
+				},
+				{
+					"label": "Les prendre l’estomac vide.",
+					"next": 32
+				},
+				{
+					"label": "Les prendre avant de se coucher.",
+					"next": 33
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 31,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "Révisez les façons de diminuer l’irritation gastrique due à la prise de vitamines prénatales.",
+			"message": "Que suggérez-vous à Maddie pour les vitamines prénatalesc ? ",
+			"options": [
+				{
+					"label": "Les prendre l’estomac vide.",
+					"next": 32
+				},
+				{
+					"label": "Les prendre avant de se coucher.",
+					"next": 33
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 32,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "Maddie dit qu’elle prend ses vitamines le matin, l’estomac vide, mais elle souffre d’irritation gastrique. Il existe d’autres façons de réduire l’irritation gastrique due à la prise de vitamines prénatales.",
+			"message": "Que suggérez-vous à Maddie pour les vitamines prénatalesc ? ",
+			"options": [
+				{
+					"label": "Les prendre avec un repas.",
+					"next": 31
+				},
+				{
+					"label": "Les prendre avant de se coucher.",
+					"next": 33
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 33,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": true,
+			"feedback": "",
+			"message": "Combien de poids devrait prendre Maddie au total tout au long de sa grossesse ? ",
+			"options": [
+				{
+					"label": "Entre 7 et 11,5 kg (entre 15,5 et 25 lb)",
+					"next": 34
+				},
+				{
+					"label": "Pas plus de 7 kg (15,5 lb)",
+					"next": 35
+				},
+				{
+					"label": "18 kg (40 lb ou plus)",
+					"next": 36
+				},
+				{
+					"label": "Entre 11.5 et 16 kg (entre 25 et 35 lb)",
+					"next": 37
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 34,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "Vu l’IMC de Maddie, cette recommandation de prise de poids n’est pas suffisante pour elle.",
+			"message": "Combien de poids devrait prendre Maddie au total tout au long de sa grossesse ?",
+			"options": [
+				{
+					"label": "Entre 7 et 11,5 kg (entre 15,5 et 25 lb)",
+					"next": 35
+				},
+				{
+					"label": "18 kg (40 lb ou plus)",
+					"next": 36
+				},
+				{
+					"label": "Entre 11.5 et 16 kg (entre 25 et 35 lb)",
+					"next": 37
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 35,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "Vu l’IMC de Maddie, cette recommandation de prise de poids n’est pas suffisante pour elle.",
+			"message": "Combien de poids devrait prendre Maddie au total tout au long de sa grossesse ?",
+			"options": [
+				{
+					"label": "Entre 7 et 11,5 kg (entre 15,5 et 25 lb)",
+					"next": 34
+				},
+				{
+					"label": "18 kg (40 lb ou plus)",
+					"next": 36
+				},
+				{
+					"label": "Entre 11.5 et 16 kg (entre 25 et 35 lb)",
+					"next": 37
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 36,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "Vu l’IMC de Maddie, cette recommandation de prise de poids est trop élevée pour elle.",
+			"message": "Combien de poids devrait prendre Maddie au total tout au long de sa grossesse ?",
+			"options": [
+				{
+					"label": "Entre 7 et 11,5 kg (entre 15,5 et 25 lb)",
+					"next": 34
+				},
+				{
+					"label": "Pas plus de 7 kg (15,5 lb)",
+					"next": 35
+				},
+				{
+					"label": "Entre 11.5 et 16 kg (entre 25 et 35 lb)",
+					"next": 37
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 37,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": true,
+			"feedback": "",
+			"message": "Comment expliquer à Maddie pourquoi il faut vérifier les protéines dans l’urine ?",
+			"options": [
+				{
+					"label": "Infection urinaire",
+					"next": 38
+				},
+				{
+					"label": "ITS",
+					"next": 39
+				},
+				{
+					"label": "Prééclampsie",
+					"next": 40
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 38,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "Les protéines n’indiquent pas une infection urinaire. La bandelette pourrait plutôt indiquer la présence de globules blancs, de nitrates et de sang, indications potentielles d’infection urinaire.",
+			"message": "Comment expliquer à Maddie pourquoi il faut vérifier les protéines dans l’urine ?",
+			"options": [
+				{
+					"label": "ITS",
+					"next": 39
+				},
+				{
+					"label": "Prééclampsie",
+					"next": 40
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 39,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "Les protéines en soi n’indiquent pas une ITS. La bandelette pourrait plutôt indiquer la présence de globules blancs qui pourrait indiquer une ITS.",
+			"message": "Comment expliquer à Maddie pourquoi il faut vérifier les protéines dans l’urine ?",
+			"options": [
+				{
+					"label": "Infection urinaire",
+					"next": 38
+				},
+				{
+					"label": "Prééclampsie",
+					"next": 40
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 40,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": true,
+			"feedback": "",
+			"message": "Quelles activités physiques recommandez-vous à Maddie pendant sa grossesse ?",
+			"options": [
+				{
+					"label": "Activités modifiées",
+					"next": 41
+				},
+				{
+					"label": "Arrêter les activités",
+					"next": 42
+				},
+				{
+					"label": "Activités habituelles",
+					"next": 43
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 41,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "L’activité physique pendant la grossesse procure de nombreux bénéfices. Il faudrait encourager Maddie à être active et à participer à une activité qui lui plait, mais qui ne présente pas de risque ni pour elle ni pour son bébé.",
+			"message": "Quelles activités physiques recommandez-vous à Maddie pendant sa grossesse ?",
+			"options": [
+				{
+					"label": "Arrêter les activités",
+					"next": 42
+				},
+				{
+					"label": "Activités habituelles",
+					"next": 43
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 42,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": false,
+			"feedback": "There are numerous benefits from physical activity during pregnancy. Maddy should be encouraged to be active with an activity that she enjoys but one that is not harmful to her or the fetus. ",
+			"message": "Quelles activités physiques recommandez-vous à Maddie pendant sa grossesse ?",
+			"options": [
+				{
+					"label": "Activités modifiées",
+					"next": 41
+				},
+				{
+					"label": "Activités habituelles",
+					"next": 43
+				}
+			],
+			"next": null
+		},
+		{
+			"id": 43,
+			"type": "video",
+			"data": "SG4_DP1_0",
+			"correct": true,
+			"feedback": "",
+			"message": "",
+			"options": [],
+			"next": null
+		}
+	]
+}

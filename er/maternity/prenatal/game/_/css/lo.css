@@ -1,0 +1,31 @@
+.lo {
+	background-image: url('../lo/watch.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+#watch { 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -180px;
+	margin-left: -280px;
+}
+.lo .panel {
+	position: absolute;
+	width: 500px;
+	right: 40px;
+	bottom: 50px;
+}
+.lo .panel .main {
+	min-height: 40px;
+	height: auto;
+	padding-bottom: 30px;
+}
+.lo .panel footer {
+	
+}
+.lo .warning {
+	font-size: .8em;
+	text-transform: none;
+	color: #fff;
+}

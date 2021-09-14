@@ -1,0 +1,16 @@
+<div class="container">
+	<div class="left controls"><a href="" class="button menu" ng-click="replayVideo();">Replay</a></div>
+	<div class="right controls"><a href="" class="button menu" ng-click="gotoMenu();">Menu</a></div>
+	<div class="question" tabindex="0">
+		<div class="vertical_outer">
+			<div class="vertical_inner">
+				{{ dp.message }}
+			</div>
+		</div>
+	</div>
+	<ul class="option_box cf">
+		<li class="option" ng-repeat="opt in randomizedOptions">
+			<button ng-click="chooseOption(opt.next)" ng-bind-html="opt.label"></button>
+		</li>
+	</ul>
+</div>

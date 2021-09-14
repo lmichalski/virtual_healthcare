@@ -1,0 +1,524 @@
+@charset 'utf-8';
+
+@import url(//fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+	background-color: rgb(102, 165, 238);
+	color: #000;
+	line-height: 1.1;
+}
+
+/********** GENERAL FORMATTING **********/
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 10px 0;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.4em;
+	color: #fff;
+}
+h2 {
+	font-size: 1em;
+	font-weight: 400;
+	color: #fff;
+}
+p {
+	margin: 10px 0;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+a:hover,
+a:focus {
+	color: #fff;
+	text-shadow: 0 0 2px #fff, 0 0 4px #fff;
+}
+a.active {
+	color: #fff;
+}
+a.button {
+	padding: 5px 30px;
+	background-color: rgb(51, 75, 153);
+	background-color: rgba(0, 0, 0, .25);
+	color: #fff;
+	text-transform: uppercase;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-o-border-radius: 50px;
+	border-radius: 50px;
+}
+a.button:hover,
+a.button:focus {
+	background-color: #fff;
+	color: rgb(62, 89, 179);
+	text-shadow: none;
+}
+
+a.button.menu {
+	background-color: rgb(62, 89, 179);
+}
+a.button.menu:hover,
+a.button.menu:focus {
+	background-color: #fff;
+	color: rgb(62, 89, 179);
+	text-shadow: none;
+}
+.nobreak {
+	white-space: nowrap;
+}
+
+/********** CONTAINERS **********/
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 30px;
+	background-color: rgb(102, 165, 238);
+	color: #000;
+}
+.panel { 
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	box-sizing: border-box;
+	width: 450px;
+	max-width: 95%;
+	max-height: 95%;
+	padding: 30px 40px;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	background-color: rgb(62, 89, 179);
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-o-border-radius: 30px;
+	border-radius: 30px;
+}
+.panel footer {
+	margin-top: 10px;
+}
+.panel .main {
+	flex-grow: 1;
+	overflow-y: auto;
+	width: 100%;
+	padding: .5em 0;
+}
+.panel footer a {
+	display: inline-block;
+	margin: .2em;
+	white-space: nowrap;
+}
+.panel h1, 
+.panel h2 {
+	text-transform: uppercase;
+}
+.column {
+	box-sizing: border-box;
+	float: left;
+	width: 50%;
+}
+.column.left {
+	padding-right: 50px;
+}
+.column.right {
+	padding-left: 50px;
+}
+
+.controls {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.controls li {
+	margin: 0;
+}
+.controls a.disabled, 
+.controls a.disabled:hover {
+	color: #b44;
+	cursor: default;
+	text-shadow: none;
+}
+
+/********** MISC PANELS **********/
+
+
+.menu {
+	width: 13em;
+}
+.credits {
+	width: 1100px;
+	text-transform: none;
+}
+.info {
+	width: 1100px;
+	text-transform: none;
+}
+.intro {
+	width: 900px;
+	background: none;
+	text-transform: none;
+}
+.intro footer {
+	text-align: center;
+}
+
+/********** GAME OPTIONS **********/
+
+.settings {
+	width: 17em;
+	text-transform: none;
+}
+.settings h2 {
+	width: 40%;
+	margin: 0;
+	padding: 0;
+	float: left;
+	font-weight: 400;
+	color: #000;
+	text-align: right;
+}
+.settings .radio {
+	width: 55%;
+	float: right;
+}
+.settings .radio label {
+	color: #000;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.settings .radio label:hover {
+	color: #fff;
+	text-shadow: 0 0 2px #fff, 0 0 4px #fff;
+}
+.settings .radio input[type="radio"] + label:before {
+	content: '';
+	display: block;
+	float: left;
+	width: .5em;
+	height: .5em;
+	margin: .2em .2em 0 0;
+	border-radius: 50%;
+	border: 1px inset rgb(62, 89, 179);
+	background-color: rgb(62, 89, 179);
+}
+.settings .radio input[type="radio"]:checked + label {
+	color: #fff;
+}
+.settings .radio input[type="radio"]:checked + label:before {
+	background-color: #fff;
+}
+.settings .radio input {
+	display: none;
+}
+
+/********** VIDEO **********/
+
+.video, 
+.videoplayer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.left.controls,
+.right.controls {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	padding: 10px;
+	z-index: 13;
+}
+.left.controls {
+	left: 20px;
+	right: auto;
+}
+
+/********** DECISION POINT **********/
+
+.progress { 
+	position: relative; 
+	display: inline-block;
+	box-sizing: border-box; 
+	width: 300px; 
+	height: 16px; 
+	padding: 1px;
+	background-color: rgb(51, 61, 153);
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 8px;
+}
+.progress .bar { 
+	position: relative; 
+	width: 14px; 
+	height: 14px;
+	min-width: 14px;
+	background-color: #fff; 
+	border-radius: 8px;
+}
+.question {
+	position: absolute;
+	top: 5%;
+	left: 0;
+	right: 0;
+	height: 50%;
+	margin: 0 5%;
+	font-size: 1.4em;
+	text-align: center;
+	color: #000;
+}
+.question .vertical_outer {
+	vertical-align: bottom;
+}
+.question .vertical_inner {
+	vertical-align: middle;
+}
+.option_box {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 5%;
+	min-height: 30%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+}
+.option {
+	display: block;
+	width: 30%;
+	max-width: 500px;
+	height: 160px;
+	padding: .4em;
+	box-sizing: border-box;
+	font-size: 1em;
+}
+.option button {
+	display: block;
+	font: inherit;
+	text-align: inherit;
+	border: none;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 20px;
+	border-radius: 13px;
+	background-color: #000;
+	background-color: rgba(255, 255, 255, 0.35);
+	color: #000;
+	cursor: pointer;
+	transition: all .1s linear;
+}
+.option button:hover {
+	background-color: #fff;
+	box-shadow: 0 0 10px #fff, 0 0 20px #fff;
+	transform: scale3d(1.05, 1.05, 1.05);
+}
+
+/********** FEEDBACK **********/
+
+.feedback {
+	width: 700px;
+}
+.feedback .main {
+	text-transform: none;
+}
+
+/********** GAME SUMMARY **********/
+
+.main.summary {
+	height: 600px;
+	overflow-y: auto;
+}
+.summary .score {
+	color: #fff;
+}
+.summary a {
+	color: #fff;
+}
+.summary li {
+	margin: 0 auto;
+	margin-left: 60px;
+	padding: 10px 0;
+}
+.summary .responses {
+	/*display: none;*/
+	overflow-y: auto;
+	min-height: 300px;
+	margin-top: 0;
+	padding: 10px;
+	background-color: #fff;
+}
+.summary .responses.expanded {
+	display: block;
+}
+.summary h2 {
+	margin-top: 40px;
+}
+.summary .correct {
+	color: #393;
+}
+.summary .wrong {
+	color: rgb(102, 165, 238);
+}
+.summary a {
+	text-decoration: underline;
+}
+.links {
+	margin: 40px 0;
+}
+
+/********** MISC **********/
+
+a.pdf {
+	display: block;
+	padding: 40px 0 40px 80px;
+	background-image: url(../img/icon_pdf.png);
+	background-size: 64px 64px;
+	background-position: 0 25px;
+	background-repeat: no-repeat;
+}
+.cf:after {
+	display: block;
+	content: '';
+	clear: both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.vertical_outer {
+	display: table;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+.vertical_inner {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+/********** MEDIA QUERIES **********/
+
+
+@media (max-width: 1400px) {
+	.option { 
+		width: 45%; 
+	}
+}
+
+@media (max-width: 720px), (max-height: 600px) {
+	body {
+		font-size: 26px;
+	}
+	h1 {
+		font-size: 1.4em;
+	}
+	.question {
+		height: 45%;
+		font-size: 1.4em;
+	}
+	.option_box {
+		padding: 0;
+	}
+	.option { 
+		height: 100px;
+		padding: .2em;
+	}
+	.option .vertical_inner {
+		padding: .2em;
+	}
+
+}
+@media (max-width: 500px) {
+	.question {
+		top: 8%;
+		height: 35%;
+		font-size: 1.2em;
+	}
+	.option {
+		height: 100px;
+		width: 90%;
+	}
+}
+@media (max-width: 320px), (max-height: 370px) {
+	
+	body {
+		font-size: 20px;
+	}
+	.container {
+		padding: 10px;
+	}
+	.panel {
+		padding: 10px 20px;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		-o-border-radius: 15px;
+		border-radius: 15px;
+	}
+	.panel header {
+		margin-bottom: 0;
+	}
+	.panel footer {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.question {
+		top: 8%;
+		height: 35%;
+	}
+	
+}
+
+@media print {
+	
+	body {
+		font-size: 14px;
+	}
+	.panel {
+		width: 100% !important;
+		height: auto !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		font-family: Arial, sans-serif !important;
+		font-size: 1em  !important;
+	}
+	.summary {
+		height: auto !important;
+		color: #000 !important;
+	}
+	footer,
+	.links {
+		display: none;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		margin: 10px 0;
+		font-family: Arial, sans-serif;
+		font-weight: 400;
+		color: #000;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	.controls {
+		display: none;
+	}
+}

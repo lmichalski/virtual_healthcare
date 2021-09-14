@@ -1,0 +1,25 @@
+<div class="container">
+	<div class="right controls"><a href="" class="button menu" ng-click="gotoMenu();">Menu</a></div>
+	<div class="panel info">
+		<header>
+			<h1>Congratulations!</h1>
+		</header>
+		<div class="main summary">
+			<div class="content">
+				<div  ng-bind-html="message"></div>
+				<h2>Your Answers:</h2>
+				<ol class="responses">
+					<li ng-repeat="dp in progress">
+						<div>{{ dp.question }}</div>
+						<div ng-class="dp.correct ? 'correct' : 'wrong'">
+							<strong>{{ dp.answer }} ({{ dp.correct ? 'Correct' : 'Incorrect' }})</strong>
+						</div>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<footer>
+			<a href="#" class="button" ng-click="downloadPDF()" target="_blank">Download Progress Report (PDF)</a>
+		</footer>
+	</div>
+</div>
